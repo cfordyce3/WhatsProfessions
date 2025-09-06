@@ -1,0 +1,7 @@
+## Interface: 30300
+## Title: Untrained Viewer
+## Notes: Shows untrained trainer recipes
+## Author: You
+## Version: 0.2
+
+UntrainedViewer.lua
