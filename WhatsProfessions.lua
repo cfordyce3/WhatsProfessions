@@ -1,4 +1,4 @@
-print("version: 1")
+print("whatsprofessions loaded")
 
 -- Slash reload command
 SLASH_NEWRELOAD1 = "/rl"
@@ -21,7 +21,7 @@ local function GetTrainerType()
   local isTradeskill = IsTradeskillTrainer()
   local skillFullName, skillName
   --print(isTradeskill)
-  if isTradeskill == 1 then
+  if isTradeskill then
     local numServices = GetNumTrainerServices()
     for i = 1, numServices do
       local name, rank, category, expanded = GetTrainerServiceInfo(i)
@@ -47,7 +47,7 @@ local function GetTrainerType()
 end
 
 -------------------------------------------------------------
--------------------------- DEBUG ----------------------------
+---------------------- DEBUG WINDOW -------------------------
 -------------------------------------------------------------
 
 -- Debug window
@@ -68,8 +68,8 @@ end)
 -- Title
 dW.title = dW:CreateFontString(nil, "OVERLAY", "GameFontNormal")
 dW.title:SetPoint("TOPLEFT", dW, 5, -5)
-local function writeType(type)
-  dW.title:SetText("Debug: %s"):format(type))
+local function writeType(t)
+  dW.title:SetText(("Debug: %s"):format(t))
 end
 
 -- Content

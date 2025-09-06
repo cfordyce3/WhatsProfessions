@@ -1,7 +1,7 @@
 ## Interface: 30300
-## Title: Untrained Viewer
+## Title: WhatsProfessions
 ## Notes: Shows untrained trainer recipes
 ## Author: You
-## Version: 0.2
+## Version: 0.1
 
-UntrainedViewer.lua
+WhatsProfessions.lua
